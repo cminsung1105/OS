@@ -1,0 +1,11 @@
+0xffffd378:     0xf7dedd78      0x080482b5      0x00000000      0x00ca0000
+(stack pointer) (sum:local var)	(sum:local var)	(sum:local var)	(sum:local var)
+0xffffd388:     0xffffd3b8      0x08048483      0x00000064      0xffffd454
+(sum:esp=ebp)	(sum:push ebp)	(ret address)	(sum:argument)	(main:local var)
+0xffffd398:     0xffffd45c      0xf7e139bd      0xf7fa83c4      0x00008000
+		(main:local var)(main:local var)(main:local var)(main:local var)
+0xffffd3a8:     0x080484db      0xf7fa8000      0x080484d0      0x00000000
+		(main:local var)(main:local var)(main:local var)(align esp to 16 bytes)	
+0xffffd3b8:     0x00000000      0xf7dfb2a3      0x00000001      0xffffd454
+		(main-esp=ebp)	(main-push ebp)
+0xffffd3c8:     0xffffd45c      0xf7fd86b0      0x00000001      0x00000001

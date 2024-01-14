@@ -1,0 +1,18 @@
+#MAKEFILE UJSING VARIABLES
+
+COMPILER=gcc
+
+OPTIONS=-Wall
+
+all: hello
+
+hello: main.o
+	$(COMPILER) $(OPTIONS) main.o -o hello
+
+main.o: main.c
+	$(COMPILER) -c $(OPTIONS) main.c
+
+clean:
+	rm *.o hello
+
+

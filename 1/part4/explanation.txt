@@ -1,0 +1,30 @@
+0x8048441 push ebp 
+(saves original EBP value on stack)
+0x8048442 mov ebp,esp 
+(new EBP equals to ESP)
+0x8048444 sub esp,0x10
+(allocates 16 bytes for local variables)
+0x8048447 mov    DWORD PTR [ebp-0x8],0x0
+(assigns 0 to sum located in memory)                          
+0x804844e mov    DWORD PTR [ebp-0x4],0x0    
+(assigns 0 to i located in memory)                     
+0x8048455 jmp    0x8048461 <sum+32> 
+(jump statement)                             
+0x8048457 mov    eax,DWORD PTR [ebp-0x4]  
+(moves i into eax)                       
+0x804845a add    DWORD PTR [ebp-0x8],eax
+(adds eax into sum)                         
+0x804845d add    DWORD PTR [ebp-0x4],0x1
+(adds 1 into i)                         
+0x8048461 mov    eax,DWORD PTR [ebp-0x4]  
+(moves i into eax)                       
+0x8048464 cmp    eax,DWORD PTR [ebp+0x8]  
+(compares i with argument n)                       
+0x8048467 jl     0x8048457 <sum+22>   
+(jumps if it i is less than n)                           
+0x8048469 mov    eax,DWORD PTR [ebp-0x8]      
+(moves sum into eax)                   
+0x804846c leave
+(it restores stack to the original EBP value)                                 
+0x804846d ret 
+(returns from the function)
